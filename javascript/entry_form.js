@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var title = $('title').text();
 	var entry_title = $('.heading h2').text();
-	var tt = $('#title').val();
+	var tt = $('#publish input[name=title]').val();
 	
     if(tt != '') $('title').text(tt+" | "+title); else $('title').text(title);
 	if(tt != '') $('.heading h2').html('<span class="head_title">'+tt+" | "+entry_title+'</span>'); else $('.heading h2').html('<span class="head_title">'+entry_title+'</span>');
